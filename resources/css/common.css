@@ -348,3 +348,7 @@ template {
 [hidden] {
   display: none;
 }
+
+a:link, a:visited, a:hover, a:focus, a:active {
+  text-decoration:none;
+}
