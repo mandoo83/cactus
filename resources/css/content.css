@@ -1,5 +1,85 @@
 @charset "UTF-8";
 
+@font-face {
+  font-family: 'Noto Sans KR';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Noto Sans KR Light'), local('NotoSansKR-Light'), 
+      url('../font/NotoSansKr-Light.woff2') format('woff2'), 
+      url('../font/NotoSansKr-Light.woff') format('woff'); 
+}
+@font-face {
+font-family: 'Noto Sans KR';
+font-style: normal;
+font-weight: 400;
+src: local('Noto Sans KR Regular'), local('NotoSansKR-Regular'), 
+      url('../font/NotoSansKr-Regular.woff2') format('woff2'), 
+      url('../font/NotoSansKr-Regular.woff') format('woff'); 
+}
+@font-face {
+font-family: 'Noto Sans KR';
+font-style: normal;
+font-weight: 500;
+src: local('Noto Sans KR Medium'), local('NotoSansKR-Medium'),
+    url('../font/NotoSansKr-Medium.woff2') format('woff2'), 
+    url('../font/NotoSansKr-Medium.woff') format('woff'); 
+}
+@font-face {
+font-family: 'Noto Sans KR';
+font-style: normal;
+font-weight: 600;
+src: local('Noto Sans KR Bold'), local('NotoSansKR-Bold'),
+    url('../font/NotoSansKr-Bold.woff2') format('woff2'), 
+    url('../font/NotoSansKr-Boldwoff') format('woff'); 
+}
+
+@font-face {
+font-family: 'HanaB';
+font-style: normal;
+font-weight: 600;
+src: local('HanaB'),
+      url('../font/HanaB.woff2') format('woff2'),
+      url('../font/HanaB.woff') format('woff'); 
+}
+
+@font-face {
+font-family: 'HanaCM';
+font-style: normal;
+font-weight: 600;
+src: local('HanaCM'),
+      url('../font/HanaCM.woff2') format('woff2'),
+      url('../font/HanaCM.woff') format('woff'); 
+}
+
+@font-face {
+font-family: 'HanaL';
+font-style: normal;
+font-weight: 600;
+src: local('HanaL'),
+      url('../font/HanaL.woff2') format('woff2'),
+      url('../font/HanaL.woff') format('woff'); 
+}
+
+@font-face {
+font-family: 'HanaM';
+font-style: normal;
+font-weight: 600;
+src: local('HanaB'),
+      url('../font/HanaM.woff2') format('woff2'),
+      url('../font/HanaM.woff') format('woff'); 
+}
+
+@font-face {
+font-family: 'HanaUL';
+font-style: normal;
+font-weight: 600;
+src: local('HanaB'),
+      url('../font/HanaUL.woff2') format('woff2'),
+      url('../font/HanaUL.woff') format('woff'); 
+}
+
+html, body {font-family: 'Noto Sans KR'}
+
 /* main
    ========================================================================== */
 body {overflow-x: hidden;}
@@ -9,13 +89,21 @@ body {overflow-x: hidden;}
  * header
  */
 header {position: fixed; width: 100%; text-align: center; background: transparent; z-index: 99999;}
-header .headerInner {min-width:1440px; width: 100%; padding: 0 140px; margin: 0 auto; color: #fff;}
-header .headerInner h1 {float: left; padding: 0 0 0 0;}
-header .headerInner h1 a {width: 162px; height: 20px; margin: 0 1194px 39px 140px; font-family: HanaB; font-size: 20px; font-weight: normal; font-stretch: normal; font-style: normal; line-height: normal; letter-spacing: normal; color: #000000;}
-
-header .headerInner ul li {float: left;}
+header .headerInner {min-width:1440px; width: 100%; margin: 0 auto; color: #fff; position: relative; z-index: 2;}
+header .headerInner h1 {float: left; padding: 35px 0 35px 140px; margin: 0;}
+header .headerInner h1 a {height: 30px; display: block; line-height: 30px; font-family: HanaB; font-size: 20px; font-weight: normal; font-stretch: normal; font-style: normal; letter-spacing: normal; color: #fff;}
+header .headerInner nav {float: right; overflow: hidden;}
+header .headerInner nav > ul {overflow: hidden; margin-right: 99px; padding: 35px 0;}
+header .headerInner nav > ul > li {float: left; width: 110px;  margin: 0; background: red; position: relative;}
+header .headerInner nav > ul > li > a {height: 30px; font-family: HanaB; font-size: 15px; font-weight: normal; font-stretch: normal; font-style: normal; line-height: 30px; letter-spacing: normal; color: #fff;}
 header .headerInner .logo {font-size: 20px; color:#fff;}
-header:after {display: block;  content: '';  position: absolute;  top: 100px;  left: 0;  z-index: 0;  height: 1px;  width: 100%;  background-color: #e9e9e9;}
+header .headerInner nav > ul ul {display: none;}
+
+
+header.on:after {display: block;  content: '';  position: absolute;  top: 100px;  left: 0;  z-index: 1;  height: 1px;  width: 100%;  background-color: #000; opacity: 0.1;}
+header.on .headerInner nav > ul ul {display: block; position: absolute; top: 100px; left: 0; width: 110px;}
+header.on .headerInner nav > ul ul a {height: 22px; line-height: 30px; font-size: 15px; font-weight: normal; font-stretch: normal; font-style: normal; line-height: normal; letter-spacing: -0.5px; text-align: center; color: #fff;}
+
 
 /*
  * contents
