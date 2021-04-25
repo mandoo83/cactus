@@ -78,48 +78,56 @@ src: local('HanaB'),
       url('../font/HanaUL.woff') format('woff'); 
 }
 
-html, body {font-family: 'Noto Sans KR'}
+html, body {font-family: 'Noto Sans KR'; height: 100%; width: 100%; min-width: 1440px;}
+
+#skipNav {position: absolute; top: -200px; left: 0;}
 
 /* main
    ========================================================================== */
-body {overflow-x: hidden;}
-.wrap {width: 100%; min-width:1440px; margin: 0 auto; overflow: hidden;}
+.wrap {width: 100%; min-width: 1440px; overflow: auto; height: 100%;}
 
 /*
  * header
  */
-header {position: fixed; width: 100%; text-align: center; background: transparent; z-index: 99999;}
+header {position: absolute; width: 100%; text-align: center; background: transparent; z-index: 99999;}
 header .headerInner {min-width:1440px; width: 100%; margin: 0 auto; color: #fff; position: relative; z-index: 2;}
 header .headerInner h1 {float: left; padding: 35px 0 35px 140px; margin: 0;}
 header .headerInner h1 a {height: 30px; display: block; line-height: 30px; font-family: HanaB; font-size: 20px; font-weight: normal; font-stretch: normal; font-style: normal; letter-spacing: normal; color: #fff;}
 header .headerInner nav {float: right; overflow: hidden;}
 header .headerInner nav > ul {overflow: hidden; margin-right: 99px; padding: 35px 0;}
-header .headerInner nav > ul > li {float: left; width: 110px;  margin: 0; background: red; position: relative;}
+header .headerInner nav > ul > li {float: left; width: 110px;  margin: 0;}
 header .headerInner nav > ul > li > a {height: 30px; font-family: HanaB; font-size: 15px; font-weight: normal; font-stretch: normal; font-style: normal; line-height: 30px; letter-spacing: normal; color: #fff;}
 header .headerInner .logo {font-size: 20px; color:#fff;}
 header .headerInner nav > ul ul {display: none;}
 
-
 header.on:after {display: block;  content: '';  position: absolute;  top: 100px;  left: 0;  z-index: 1;  height: 1px;  width: 100%;  background-color: #000; opacity: 0.1;}
-header.on .headerInner nav > ul ul {display: block; position: absolute; top: 100px; left: 0; width: 110px;}
-header.on .headerInner nav > ul ul a {height: 22px; line-height: 30px; font-size: 15px; font-weight: normal; font-stretch: normal; font-style: normal; line-height: normal; letter-spacing: -0.5px; text-align: center; color: #fff;}
+header.on .headerInner nav > ul ul {display: block; margin-top: 64px; width: 110px;}
+header.on .headerInner nav > ul ul a {display: block; width: 100%; height: 34px; line-height: 34px; font-size: 15px; font-weight: normal; font-stretch: normal; font-style: normal; letter-spacing: -0.5px; text-align: center; color: #fff;}
 
 
 /*
  * contents
  */
+.swiper-container {width: 100%; height: 100%;}
+.v1 {background: url(../img/visual1.png) no-repeat; background-size: cover;}
+.v2 {background: url(../img/visual2.png) no-repeat; background-size: cover;}
+
 section {overflow:hidden; position: relative; width:100%; min-width: 1440px; height:100%;}
 section .contents {padding: 0 140px;}
 section img {width: 100%;}
 
-section .mainTitle1 {position: absolute; top: 420px;}
+section .mainTitle1 {position: absolute; left: 140px; top: 420px;}
 section .mainTitle1 h2 {color: #fff; font-size: 72px; font-family: 'HanaB';}
 section .mainTitle1 p {margin-top: 24px; color: #fff; font-size: 16px;}
+
+section .mainTitle2 {position: absolute; left: 140px; top: 420px;}
+section .mainTitle2 h2 {color: #fff; font-size: 72px; font-family: 'HanaB';}
+section .mainTitle2 p {margin-top: 24px; color: #fff; font-size: 16px;}
 
 /*
  * footer
  */
-footer {min-width: 1440px; padding: 40px 140px; background: #fff; box-sizing: border-box; border-top: 1px solid #eee;}
+footer {width: 100%; min-width: 1440px; padding: 40px 140px; background: #fff; box-sizing: border-box; border-top: 1px solid #eee;}
 footer .footerInner {position: relative; height: 150px;}
 footer .footerT {margin-bottom: 20px;}
 footer .footerT > ul, footer .footerB ul {display: flex;}
