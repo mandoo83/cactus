@@ -9,12 +9,15 @@ contents.on("activeIndexChange", function () {
     var slide = $(".contents > .swiper-wrapper > .swiper-slide");
 
     slide.eq(1).removeClass("v1");    
+    $("header").removeClass("black");
 
     if (idx == 2 && pIdx == 1) {
         slide.eq(1).addClass("v1");
     } else if (idx == 1 && pIdx == 2) {
         slide.eq(1).addClass("v1");    
-    } 
+    } else if (idx == 3) {
+        $("header").addClass("black", 800);
+    }   
 });
 
 
@@ -28,6 +31,14 @@ tab.on("activeIndexChange", function () {
 })
 
 $(".contents .tabHeader li").on("click", function () {
-    
+    var idx = $(this).index();
+    tab.slideTo(idx);
+    $(".contents .boxWrap").eq(idx).find("li:eq(0)").trigger("mouseenter");
+    return false;
+});
+
+$(".contents .boxWrap li").on("mouseenter", function () {
+    $(this).addClass("on").siblings().removeClass("on"); 
+    $(this).parents(".tab").removeClass("v2_1_1 v2_1_2 v2_1_3 v2_2_1 v2_2_2 v2_2_3 v2_3_1 v2_3_2 v2_3_3").addClass("v2_" + (tab.realIndex + 1) + "_" + ($(this).index() + 1));
     return false;
 });
