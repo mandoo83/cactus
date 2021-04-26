@@ -22,25 +22,33 @@ contents.on("activeIndexChange", function () {
     }   
 });
 
-
-var tab = new Swiper(".tab");
-
-tab.on("activeIndexChange", function () {
-    var idx = this.realIndex;
-    var tabs = $(".contents .tabHeader li");
-
-    tabs.eq(idx).addClass("on").siblings().removeClass("on"); 
-})
+var tabIdx = 0;
+var fromClass = "v2_1_1";
+var toClass = "v2_1_1";
 
 $(".contents .tabHeader li").on("click", function () {
-    var idx = $(this).index();
-    tab.slideTo(idx);
-    $(".contents .boxWrap").eq(idx).find("li:eq(0)").trigger("mouseenter");
+    tabIdx = $(this).index();
+    $(".contents .tabHeader li").eq(tabIdx).addClass("on").siblings().removeClass("on");
+    $(".contents .tabHeader div p").eq(tabIdx).addClass("on").siblings().removeClass("on");
+    $(".contents .tabBody > section").eq(tabIdx).addClass("on").siblings().removeClass("on");
+    $(".contents .tabBody > .on").find("li:eq(0)").trigger("mouseenter");
+
     return false;
 });
 
 $(".contents .boxWrap li").on("mouseenter", function () {
     $(this).addClass("on").siblings().removeClass("on"); 
-    $(this).parents(".tab").removeClass("v2_1_1 v2_1_2 v2_1_3 v2_2_1 v2_2_2 v2_2_3 v2_3_1 v2_3_2 v2_3_3").addClass("v2_" + (tab.realIndex + 1) + "_" + ($(this).index() + 1));
+
+    toClass = "v2_" + (tabIdx + 1) + "_" + ($(this).index() + 1);
+
+    if (fromClass != toClass) {
+        $(".tabWrap .toBg").addClass(toClass);
+        setTimeout(function () {
+            $(".tabWrap .fromBg").removeClass(fromClass).addClass(toClass);
+            $(".tabWrap .toBg").removeClass(toClass);
+            fromClass = toClass;
+        }, 300);
+    }
+
     return false;
 });
