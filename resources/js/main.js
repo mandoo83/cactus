@@ -8,11 +8,13 @@ contents.on("activeIndexChange", function () {
     var pIdx = this.previousIndex;
     var slide = $(".contents > .swiper-wrapper > .swiper-slide");
 
+    $(".contents").addClass("v1"); 
     slide.eq(1).removeClass("v1");    
     $("header").removeClass("black");
 
     if (idx == 2 && pIdx == 1) {
         slide.eq(1).addClass("v1");
+        $(".contents").removeClass("v1"); 
     } else if (idx == 1 && pIdx == 2) {
         slide.eq(1).addClass("v1");    
     } else if (idx == 3) {
