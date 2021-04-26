@@ -110,19 +110,51 @@ header.on .headerInner nav > ul ul a {display: block; width: 100%; height: 34px;
  */
 .swiper-container {width: 100%; height: 100%;}
 .v1 {background: url(../img/visual1.png) no-repeat; background-size: cover;}
-.v2 {background: url(../img/visual2.png) no-repeat; background-size: cover;}
+.v2_1_1 {background: url(../img/visual2_1_1.png) no-repeat; background-size: cover;}
+.v2_1_2 {background: url(../img/visual2_1_2.png) no-repeat; background-size: cover;}
+.v2_1_3 {background: url(../img/visual2_1_3.png) no-repeat; background-size: cover;}
+.v2_2_1 {background: url(../img/visual2_2_1.png) no-repeat; background-size: cover;}
+.v2_2_2 {background: url(../img/visual2_2_2.png) no-repeat; background-size: cover;}
+.v2_2_3 {background: url(../img/visual2_2_3.png) no-repeat; background-size: cover;}
+.v2_3_1 {background: url(../img/visual2_3_1.png) no-repeat; background-size: cover;}
+.v2_3_2 {background: url(../img/visual2_3_2.png) no-repeat; background-size: cover;}
+.v2_3_3 {background: url(../img/visual2_3_3.png) no-repeat; background-size: cover;}
+.v3 {background: url(../img/visual3.png) no-repeat; background-size: cover;}
 
 section {overflow:hidden; position: relative; width:100%; min-width: 1440px; height:100%;}
-section .contents {padding: 0 140px;}
 section img {width: 100%;}
 
 section .mainTitle1 {position: absolute; left: 140px; top: 420px;}
-section .mainTitle1 h2 {color: #fff; font-size: 72px; font-family: 'HanaB';}
-section .mainTitle1 p {margin-top: 24px; color: #fff; font-size: 16px;}
+section .mainTitle1 h2 {color: #fff; font-size: 72px; font-family: 'HanaB'; line-height: 1.33;}
+section .mainTitle1 p {margin-top: 24px; color: #fff; font-size: 16px; line-height: 1.33; height: 24px; font-weight: 500;}
 
-section .mainTitle2 {position: absolute; left: 140px; top: 420px;}
-section .mainTitle2 h2 {color: #fff; font-size: 72px; font-family: 'HanaB';}
-section .mainTitle2 p {margin-top: 24px; color: #fff; font-size: 16px;}
+section .mainTitle2 {position: absolute; left: 140px; top: 400px; }
+section .mainTitle2 h2 {color: #fff; font-size: 56px; font-family: 'HanaB'; line-height: 1.29;}
+section .mainTitle2 p {margin-top: 24px; color: #fff; font-size: 16px; font-weight: 500; line-height: 1.75; letter-spacing: -0.5px;}
+
+.contents .tab {position: relative;}
+.contents .tab .tabHeader {position: absolute; left: 50%; margin-left: -210px; top: 270px; width: 420px; height: 48px;}
+.contents .tab .tabHeader ul {position: relative; z-index: 2;}
+.contents .tab .tabHeader li {float: left; width: 140px; height: 48px;}
+.contents .tab .tabHeader li.on {border-radius: 30.5px; background-color: #9bc452;}
+.contents .tab .tabHeader li a {display: block; width: 100%; line-height: 48px; opacity: 0.6; font-family: HanaM; font-size: 18px; text-align: center; color: #ffffff;}
+.contents .tab .tabHeader:after {display: block;  content: '';  position: absolute;  z-index: 1; top: 0;  left: 0; width: 100%; height: 100%; opacity: 0.3; border-radius: 30.5px; background-color: #000000;}
+
+.contents .tab h2 {margin: 366px auto 0; width: 924px; height: 144px; font-family: HanaB; font-size: 56px; line-height: 1.29; text-align: center; color: #ffffff;}
+
+.contents .tab .boxWrap {height: 400px; display: flex; justify-content: space-between; position: absolute; bottom: 0; width: 100%;}
+.contents .tab .boxWrap li {height: 400px; flex-grow: 1;}
+.contents .tab .boxWrap li:nth-child(2) {border-left: 1px solid rgb(255, 255, 255, .3); border-right: 1px solid rgb(255, 255, 255, .3);}
+.contents .tab .boxWrap:after {display: block;  content: ''; position: absolute;  z-index: 1; top: 0;  left: 0; height: 1px; width: 100%; opacity: 0.15; background-color: #ffffff;}
+
+
+.contents .tab .boxWrap li h3 {width: 72px; height: 32px; margin: 163px auto 0; border-radius: 16px; border: solid 1px #9bc452; font-size: 14px; line-height: 32px; text-align: center; color: #9bc452;}
+.contents .tab .boxWrap li > p {height: 32px; font-size: 24px; font-weight: bold; line-height: 1.33; text-align: center; color: #ffffff; margin-top: 8px;}
+.contents .tab .boxWrap li div {display: none;}
+
+.contents .tab .boxWrap li.on {background: #fff;}
+.contents .tab .boxWrap li.on > div {display: block;}
+
 
 /*
  * footer
