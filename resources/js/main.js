@@ -23,10 +23,10 @@ contents.on("activeIndexChange", function () {
 
     switch (idx) {
         case 0:
-            $(".mainTitle1 h2").addClass("animate__animated animate__wobble");
+            $(".mainTitle1 h2").addClass("animate__animated animate__fadeInLeftBig");
             break;
         case 1:
-            $(".mainTitle2 h2").addClass("animate__animated animate__wobble");
+            $(".mainTitle2 h2").addClass("animate__animated animate__fadeInRightBig");
             break;                
         case 3:
             $(".career > div p").addClass("animate__animated animate__wobble");
@@ -35,11 +35,11 @@ contents.on("activeIndexChange", function () {
 });
 
 $(".mainTitle1 h2").on("animationend", function () {
-    $(this).removeClass("animate__animated animate__wobble")
+    $(this).removeClass("animate__animated animate__fadeInLeftBig")
 });
 
 $(".mainTitle2 h2").on("animationend", function () {
-    $(this).removeClass("animate__animated animate__wobble")
+    $(this).removeClass("animate__animated animate__fadeInRightBig")
 });
 
 $(".career > div p").on("animationend", function () {
