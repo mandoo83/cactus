@@ -23,19 +23,19 @@ contents.on("activeIndexChange", function () {
 
     switch (idx) {
         case 0:
-            $(".mainTitle1 h2").addClass("animate__animated animate__fadeInLeftBig");
+            $(".mainTitle1 h2").addClass("animate__animated animate__lightSpeedInLeft");
             break;
         case 1:
             $(".mainTitle2 h2").addClass("animate__animated animate__fadeInRightBig");
             break;                
         case 3:
-            $(".career > div p").addClass("animate__animated animate__wobble");
+            $(".career > div p").addClass("animate__animated animate__slideInDown");
             break;
     }
 });
 
 $(".mainTitle1 h2").on("animationend", function () {
-    $(this).removeClass("animate__animated animate__fadeInLeftBig")
+    $(this).removeClass("animate__animated animate__lightSpeedInLeft")
 });
 
 $(".mainTitle2 h2").on("animationend", function () {
@@ -43,7 +43,7 @@ $(".mainTitle2 h2").on("animationend", function () {
 });
 
 $(".career > div p").on("animationend", function () {
-    $(this).removeClass("animate__animated animate__wobble")
+    $(this).removeClass("animate__animated animate__slideInDown")
 });
 
 var tabIdx = 0;
