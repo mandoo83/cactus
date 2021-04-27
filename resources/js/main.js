@@ -25,6 +25,8 @@ contents.on("activeIndexChange", function () {
 var tabIdx = 0;
 var fromClass = "v2_1_1";
 var toClass = "v2_1_1";
+var classStr = "v2_1_1 v2_1_2 v2_1_3 v2_2_1 v2_2_2 v2_2_3 v2_3_1 v2_3_2 v2_3_3";
+var setTimeoutParam = null;
 
 $(".contents .tabHeader li").on("click", function () {
     tabIdx = $(this).index();
@@ -40,15 +42,19 @@ $(".contents .boxWrap li").on("mouseenter", function () {
     $(this).addClass("on").siblings().removeClass("on"); 
 
     toClass = "v2_" + (tabIdx + 1) + "_" + ($(this).index() + 1);
+    
+    clearTimeout(setTimeoutParam);
 
     if (fromClass != toClass) {
-        $(".tabWrap .toBg").addClass(toClass);
-        setTimeout(function () {
-            $(".tabWrap .fromBg").removeClass(fromClass).addClass(toClass);
-            $(".tabWrap .toBg").removeClass(toClass);
-            fromClass = toClass;
-        }, 300);
+        $(".tabWrap #toBg").addClass(toClass);
+        setTimeoutParam = setTimeout(setTimeoutFnc, 300);
     }
 
     return false;
 });
+
+var setTimeoutFnc = function () {
+    $(".tabWrap #fromBg").removeClass(classStr).addClass(toClass);
+    $(".tabWrap #toBg").removeClass(classStr);
+    fromClass = toClass;
+};

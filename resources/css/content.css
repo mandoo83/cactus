@@ -89,7 +89,7 @@ html, body {font-family: 'Noto Sans KR'; height: 100%; width: 100%; min-width: 1
 /*
  * header
  */
-header {position: absolute; width: 100%; text-align: center; background: transparent; z-index: 99999;}
+header {position: absolute; width: 100%; text-align: center; background: transparent; z-index: 99999; transition: 0.5s;}
 header .headerInner {min-width:1440px; width: 100%; margin: 0 auto; color: #fff; position: relative; z-index: 2;}
 header .headerInner h1 {float: left; padding: 35px 0 35px 140px; margin: 0;}
 header .headerInner h1 a {height: 30px; display: block; line-height: 30px; font-family: HanaB; font-size: 20px; color: #fff;}
@@ -135,8 +135,8 @@ section .mainTitle2 h2 {color: #fff; font-size: 56px; font-family: 'HanaB'; line
 section .mainTitle2 p {margin-top: 24px; color: #fff; font-size: 16px; font-weight: 500; line-height: 1.75; letter-spacing: -0.5px;}
 
 .contents .tabWrap {position: relative; background: #fff;}
-.contents .tabWrap .fromBg {width: 100%; height: 100%; position: absolute;}
-.contents .tabWrap .toBg {width: 100%; height: 100%; position: absolute; transition-duration: 300ms; opacity: 0;}
+.contents .tabWrap #fromBg {width: 100%; height: 100%; position: absolute; left: 0; top: 0;}
+.contents .tabWrap #toBg {width: 100%; height: 100%; position: absolute; transition-duration: 300ms; opacity: 0; left: 0; top: 0;}
 
 .contents .tabWrap .tabHeader {position: absolute; left: 50%; margin-left: -462px; top: 270px; width: 924px; height: 250px;}
 .contents .tabWrap .tabHeader ul {position: relative; z-index: 2; overflow: hidden; width: 420px; margin: 0 auto;}
@@ -154,7 +154,7 @@ section .mainTitle2 p {margin-top: 24px; color: #fff; font-size: 16px; font-weig
 .contents .tabWrap .tabBody section.on {display: block;}
 
 .contents .tabWrap .boxWrap {height: 400px; display: flex; justify-content: space-around;}
-.contents .tabWrap .boxWrap li {height: 400px; flex-grow: 1; width: 33%;}
+.contents .tabWrap .boxWrap li {height: 400px; flex-grow: 1; width: 33%; transition: 0.5s;}
 .contents .tabWrap .boxWrap li:nth-child(2) {border-left: 1px solid rgb(255, 255, 255, .3); border-right: 1px solid rgb(255, 255, 255, .3);}
 .contents .tabWrap .boxWrap:after {display: block;  content: ''; position: absolute;  z-index: 1; top: 0;  left: 0; height: 1px; width: 100%; opacity: 0.15; background-color: #ffffff;}
 
