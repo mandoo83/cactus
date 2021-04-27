@@ -20,6 +20,30 @@ contents.on("activeIndexChange", function () {
     } else if (idx == 3) {
         $("header").addClass("black", 800);
     }   
+
+    switch (idx) {
+        case 0:
+            $(".mainTitle1 h2").addClass("animate__animated animate__wobble");
+            break;
+        case 1:
+            $(".mainTitle2 h2").addClass("animate__animated animate__wobble");
+            break;                
+        case 3:
+            $(".career > div p").addClass("animate__animated animate__wobble");
+            break;
+    }
+});
+
+$(".mainTitle1 h2").on("animationend", function () {
+    $(this).removeClass("animate__animated animate__wobble")
+});
+
+$(".mainTitle2 h2").on("animationend", function () {
+    $(this).removeClass("animate__animated animate__wobble")
+});
+
+$(".career > div p").on("animationend", function () {
+    $(this).removeClass("animate__animated animate__wobble")
 });
 
 var tabIdx = 0;
@@ -42,7 +66,7 @@ $(".contents .boxWrap li").on("mouseenter", function () {
     $(this).addClass("on").siblings().removeClass("on"); 
 
     toClass = "v2_" + (tabIdx + 1) + "_" + ($(this).index() + 1);
-    
+
     clearTimeout(setTimeoutParam);
 
     if (fromClass != toClass) {
