@@ -26,10 +26,10 @@ contents.on("activeIndexChange", function () {
             $(".mainTitle1 h2").addClass("animate__animated animate__lightSpeedInLeft");
             break;
         case 1:
-            $(".mainTitle2 h2").addClass("animate__animated animate__fadeInRightBig");
+            $(".mainTitle2 h2").addClass("animate__animated animate__lightSpeedOutLeft");
             break;                
         case 3:
-            $(".career > div p").addClass("animate__animated animate__slideInDown");
+            $(".career > div p").addClass("animate__animated animate__flip");
             break;
     }
 });
@@ -39,11 +39,11 @@ $(".mainTitle1 h2").on("animationend", function () {
 });
 
 $(".mainTitle2 h2").on("animationend", function () {
-    $(this).removeClass("animate__animated animate__fadeInRightBig")
+    $(this).removeClass("animate__animated animate__lightSpeedOutLeft")
 });
 
 $(".career > div p").on("animationend", function () {
-    $(this).removeClass("animate__animated animate__slideInDown")
+    $(this).removeClass("animate__animated animate__flip")
 });
 
 var tabIdx = 0;
