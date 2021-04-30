@@ -18,6 +18,10 @@ $("#fullpage").fullpage({
 });
 
 
+
+
+
+
 /*
 var contents = new Swiper(".contents", {
     direction: "vertical",

@@ -161,18 +161,17 @@ footer .footerB ul {margin-bottom: 20px;}
 #fullpage .tabBody li > p {height: 32px; font-size: 24px; font-weight: bold; line-height: 1.33; text-align: center; color: #ffffff; margin-top: 8px;}
 #fullpage .tabBody li > *:nth-child(3) {display: none;}
 #fullpage .tabBody ul li:nth-child(2) {border-left: 1px solid rgb(255, 255, 255, .3); border-right: 1px solid rgb(255, 255, 255, .3);}
+#fullpage .tabBody ul li > p:nth-child(3) {display: none; padding-bottom: 12px; opacity: 0.6; font-size: 15px; line-height: 1.53; letter-spacing: -0.5px; text-align: center; color: #000000;}
 
 #fullpage .tabBody ul li.on {background: #fff;}
-#fullpage .tabBody ul li.on h3 {border: solid 1px #9bc452; color: #9bc452; margin-top: 131px;}
-#fullpage .tabBody ul li.on > *:nth-child(2) {color: #000; padding-bottom: 20px;}
-#fullpage .tabBody ul li.on > *:nth-child(3) {display: block;}
-#fullpage .tabBody ul li.on dl dt {height: 23px; font-size: 15px; font-weight: bold; line-height: 1.53; letter-spacing: -0.5px; text-align: center; color: #000000;}
-#fullpage .tabBody ul li.on dl dd {padding-bottom: 12px; opacity: 0.6; font-size: 15px; line-height: 1.53; letter-spacing: -0.5px; text-align: center; color: #000000;}
+#fullpage .tabBody ul li.on h3 {border: solid 1px #9bc452; color: #9bc452; margin-top: 56px;}
+#fullpage .tabBody ul li.on > p:nth-child(2) {color: #000; padding-bottom: 20px;}
+#fullpage .tabBody ul li.on > p:nth-child(3) {display: block;}
 
-#fullpage .tabBody ul:nth-child(1) li:nth-child(1).on h3 {margin-top: 75px;} 
-#fullpage .tabBody ul:nth-child(1) li:nth-child(2).on h3 {margin-top: 129px;} 
-#fullpage .tabBody ul:nth-child(2) li:nth-child(2).on h3 {margin-top: 142px;} 
-#fullpage .tabBody ul:nth-child(3) li:nth-child(3).on h3 {margin-top: 142px;} 
+#fullpage .tabBody ul:nth-child(1) li:nth-child(2).on h3 {margin-top: 55px;} 
+#fullpage .tabBody ul:nth-child(2) li:nth-child(2).on h3 {margin-top: 67px;} 
+#fullpage .tabBody ul:nth-child(1) li:nth-child(2).on h3 {margin-top: 55px;} 
+#fullpage .tabBody ul:nth-child(3) li:nth-child(3).on h3 {margin-top: 67px;} 
 
 
 #fullpage .section:nth-child(4) {background: url(../img/visual3.png) no-repeat; background-size: cover;}
