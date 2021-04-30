@@ -9,7 +9,7 @@ $("#fullpage").fullpage({
         }
     },
     afterLoad: function (anchorLink, origin) {
-        if (origin == 3 || origin == 4) {
+        if (origin == 4 || origin == 5) {
             $("header").addClass("black");
         } else {
             $("header").removeClass("black");
