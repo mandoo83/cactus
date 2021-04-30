@@ -8,8 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <link rel="stylesheet" href="resources/css/reset.css?v=2021042501"/>
-    <link rel="stylesheet" href="resources/css/normalize.css?v=2021042501"/>
-    <link rel="stylesheet" href="resources/lib/swiper-bundle.min.css?v=2021042501"/>
+    <link rel="stylesheet" href="resources/lib/jquery.fullpage.css?v=2021042501"/>
     <link rel="stylesheet" href="resources/lib/animate.min.css?v=2021042501"/>
     <link rel="stylesheet" href="resources/css/content.css?v=2021042501"/>
 </head>
@@ -55,181 +54,158 @@
         </header>
         <!-- Gnb E -->
 
-        <!-- content S -->
-        <div class="contents swiper-container v1">
-            <div class="swiper-wrapper">
-                <section class='swiper-slide'>
-                    <div class="mainTitle1">
-                        <h2 class="animate__animated animate__lightSpeedInLeft">청소년과 함께 성장하며<br>행복을 나눕니다</h2>
-                        <p>청소년그루터기재단은 누구나 할 수 있지만 아무도 하지 않는 소외된 청소년들과 함께합니다.</p>
-                    </div>
-                </section>
-        
-                <section class='swiper-slide'>
-                    <div class="mainTitle2">
-                        <h2>희망과 발전가능한 미래를<br>함께 나눕니다</h2>
-                        <p>
-                            코로나 19 장기화로 인해 청소년들의 복지 사각지대가 더 광범위되고 심화됨에 따라 우리 미래세대인<br>
-                            청소년을 키우고 돕는 일에 플랫폼 역할을 하고자 청소년에게 희망과 발전가능한 미래를 함께 나누는 재단을 설립하게 되었습니다.<br>
-                            청소년그루터기재단은 투명한 경영과 청소년 발달단계에 맞는 차별화, 전문화 사업을 통해<br>
-                            기업의 사회적 책임을 다하여 국가와 세계에 선한 영향력의 선도 역할을 하는 지속가능한 사업을 진행해 나갑니다.
-                        </p>
-                    </div>
-                </section> 
+        <div id="fullpage">
+            <!-- content S -->
+            <section class="section">
+                <div class="ment">
+                    <h2>청소년과 함께 성장하며<br>행복을 나눕니다</h2>
+                    <p>청소년그루터기재단은 누구나 할 수 있지만 아무도 하지 않는 소외된 청소년들과 함께합니다.</p>                    
+                </div>
+            </section>
+    
+            
+            <section class="section">
+                <div class="ment">
+                    <h2>희망과 발전가능한 미래를<br>함께 나눕니다</h2>
+                    <p>
+                        코로나 19 장기화로 인해 청소년들의 복지 사각지대가 더 광범위되고 심화됨에 따라 우리 미래세대인<br>
+                        청소년을 키우고 돕는 일에 플랫폼 역할을 하고자 청소년에게 희망과 발전가능한 미래를 함께 나누는 재단을 설립하게 되었습니다.<br>
+                        청소년그루터기재단은 투명한 경영과 청소년 발달단계에 맞는 차별화, 전문화 사업을 통해<br>
+                        기업의 사회적 책임을 다하여 국가와 세계에 선한 영향력의 선도 역할을 하는 지속가능한 사업을 진행해 나갑니다.
+                    </p>
+                </div>
+            </section> 
 
-                <div class='tabWrap swiper-slide'>
-                    <div id="fromBg" class="v2_1_1"></div>
-                    <div id="toBg"></div>
-                    <div class="tabHeader">
-                        <ul>
-                            <li class="on"><a href="">생성기</a></li>
-                            <li><a href="">성장기</a></li>
-                            <li><a href="">성숙기</a></li>
-                        </ul>
-                        
-                        <div>
-                            <p class="on">코로나 19로 심화된 청소년 문제를<br/>해결하며 주력사업을 준비합니다</p>
-                            <p>민관협업을 통한 사업확대 및 국민공감대<br/>형성을 위한 캠페인을 진행합니다</p>
-                            <p>전문화·차별화된 심화사업 및<br/>국민 참여 단계입니다</p>
-                        </div>
-                    </div>
-                    <div class="tabBody">
-                        <section class="on">
-                            <ul class="boxWrap">
-                                <li class="on">
-                                    <h2>사업1</h2>
-                                    <p>아동보호시설 청소년</p>
-                                    <div>
-                                        <h3>초·중학생</h3>
-                                        <p>교육 불평등 해소를 위한 교육 평등의 기회를<br/>제공하는 학습멘토링 프로그램</p>
+            <section class="section">
+                <div class="bg">
+                    <img src="resources/img/visual2_1.png" class="on"/>
+                    <img src="resources/img/visual2_2.png"/>
+                    <img src="resources/img/visual2_3.png"/>
+                    <img src="resources/img/visual2_4.png"/>
+                    <img src="resources/img/visual2_5.png"/>
+                    <img src="resources/img/visual2_6.png"/>
+                    <img src="resources/img/visual2_7.png"/>
+                    <img src="resources/img/visual2_8.png"/>
+                    <img src="resources/img/visual2_9.png"/>
+                </div>
+                <div class="tabNav">
+                    <ul class="tab">
+                        <li class="on"><h2>생성기</h2></li>
+                        <li><h2>성장기</h2></li>
+                        <li><h2>성숙기</h2></li>
+                    </ul>
 
-                                        <h3>고등학생(국가보호종료 준비)</h3>
-                                        <p>자립관련 이론교육과 실습 연계를 통한<br/>사회적응 멘토링 프로그램</p>  
-                                    </div>
-                                </li>
-                                <li>
-                                    <h2>사업2</h2>
-                                    <p>취약계층 청소년</p>
-                                    <div>
-                                        <p>영양불균형과 결식해소를 위한 식생활 개선교육과<br/>먹거리(밀키트 : 사회적 기업 고려중) 지원 사업</p>
-                                    </div>
-                                </li>
-                                <li>
-                                    <h2>사업3</h2>
-                                    <p>범죄피해 청소년</p>
-                                    <div>
-                                        <p>범죄피해 청소년의 치료비, 주거환경 개선,<br/>심리정서 지원상담을 위한 사업</p>
-                                    </div>
-                                </li>                                
-                            </ul>
-                        </section>
+                    <ul class="ment">
+                        <li class="on">코로나 19로 심화된 청소년 문제를<br/>해결하며 주력사업을 준비합니다</li>
+                        <li>민관협업을 통한 사업확대 및 국민공감대<br/>형성을 위한 캠페인을 진행합니다</li>
+                        <li>전문화·차별화된 심화사업 및<br/>국민 참여 단계입니다</li>
+                    </ul>
+                </div>
 
-                        <section>
-                            <ul class="boxWrap">
-                                <li>
-                                    <h2>사업1</h2>
-                                    <p>보호종료예정·보호종료 청소년</p>      
-                                    <div>
-                                        <p>1단계 사업 심화 및 지역네트워크 구축,<br/>정책지원 및 자치활동 지원 사업</p>
-                                    </div>
-                                </li>
-                                <li>
-                                    <h2>사업2</h2>
-                                    <p>취약계층 청소년</p>   
-                                    <div>
-                                        <p>식생활 개선교육 대상 및 지역 확대</p>
-                                    </div>
-                                </li>
-                                <li>
-                                    <h2>사업3</h2>
-                                    <p>범죄피해 청소년</p>   
-                                    <div>
-                                        <p>1단계 사업 심화 및 심리·정서지원<br/>상담연계 및 집단상담 지원 사업</p>
-                                    </div>
-                                </li>                                
-                            </ul>
-                        </section>
+                <div class="tabBody">
+                    <ul class="on">
+                        <li class="on">
+                            <h3>사업1</h3>
+                            <p>아동보호시설 청소년</p>
+                            <p>교육 불평등 해소를 위한 아동양육시설 초중등학생 학습지원<br/>자립관련 이론과 실습을 통한 아동양육시설 고등학생 자립지원</p>
+                        </li>
+                        <li>
+                            <h3>사업2</h3>
+                            <p>취약계층 청소년</p>
+                            <p>영양불균형과 결식해소를 위한 식생활 개선교육과<br/>먹거리(밀키트 : 사회적 기업 고려중) 지원 사업</p>
+                        </li>
+                        <li>
+                            <h3>사업3</h3>
+                            <p>범죄피해 청소년</p>
+                            <p>범죄피해 청소년의 치료비, 주거환경 개선,<br/>심리정서 지원상담을 위한 사업</p>
+                        </li> 
+                    </ul>
+                    
+                    <ul>
+                        <li>
+                            <h3>사업1</h3>
+                            <p>보호종료예정·보호종료 청소년</p>      
+                            <p>1단계 사업 심화 및 지역네트워크 구축,<br/>정책지원 및 자치활동 지원 사업</p>
+                        </li>
+                        <li>
+                            <h3>사업2</h3>
+                            <p>취약계층 청소년</p>   
+                            <p>식생활 개선교육 대상 및 지역 확대</p>
+                        </li>
+                        <li>
+                            <h3>사업3</h3>
+                            <p>범죄피해 청소년</p>   
+                            <div>
+                                <p>1단계 사업 심화 및 심리·정서지원<br/>상담연계 및 집단상담 지원 사업</p>
+                            </div>
+                        </li>  
+                    </ul>
+                              
+                    <ul>
+                        <li>
+                            <h3>사업1</h3>
+                            <p>단계별재단사업참여 청소년</p>  
+                            <p>1, 2단계 사업 참여 청소년들 중에서 선발하여<br/>진로 컨설팅 및 취업교육·취업연계 사업 진행</p>
+                        </li>
+                        <li>
+                            <h3>사업2</h3>
+                            <p>자살·자해노출 및 중독 청소년</p>      
+                            <p>자살 및 중독 예방 교육지원과 은둔형 외톨이<br/>청소년들을 위한 상담 및 직접 지원 사업</p>
+                        </li>
+                        <li>
+                            <h3>사업3</h3>
+                            <p>보호종료 청소년</p>     
+                            <p>주거공간 지원으로 전인적 자립기회 제공 사업</p>
+                        </li>  
+                    </ul>      
+                </div>
+            </section>
 
-                        <section>
-                            <ul class="boxWrap">
-                                <li>
-                                    <h2>사업1</h2>
-                                    <p>단계별재단사업참여 청소년</p>  
-                                    <div>
-                                        <p>1, 2단계 사업 참여 청소년들 중에서 선발하여<br/>진로 컨설팅 및 취업교육·취업연계 사업 진행</p>
-                                    </div>
-                                </li>
-                                <li>
-                                    <h2>사업2</h2>
-                                    <p>자살·자해노출 및 중독 청소년</p>      
-                                    <div>
-                                        <p>자살 및 중독 예방 교육지원과 은둔형 외톨이<br/>청소년들을 위한 상담 및 직접 지원 사업</p>
-                                    </div>
-                                </li>
-                                <li>
-                                    <h2>사업3</h2>
-                                    <p>보호종료 청소년</p>        
-                                    <div>
-                                        <p>주거공간 지원으로 전인적 자립기회 제공 사업</p>
-                                    </div>
-                                </li>                                
-                            </ul>
-                        </section>
-                    </div>
+            <section class="section">
+                <div class="ment">
+                    <p>
+                        청소년의 플랫폼
+                        <br/>청소년그루터기재단과 함께할 
+                        <br/>인재를 모집합니다    
+                    </p>
+                    <a href="#" class="linkButton">자세히 보기</a>    
+                </div>               
+            </section>
+            <!-- content E -->
+    
+            <!-- footer S -->
+            <footer class="section fp-auto-height">
+                <div class="footerT">
+                    <ul>
+                        <li><a href="">이메일무단수집거부</a></li>
+                        <li><a href="">오시는 길</a></li>
+                        <li><a href="">채용</a></li>
+                    </ul>
+    
+                    <select class="familySite">
+                        <option>공익위반제보</option>
+                        <option>기획재정부</option>
+                        <option>주무관청</option>
+                        <option>국세청</option>
+                        <option>국민권익위원회</option>
+                    </select>
+                </div>
+    
+                <div class="footerB">
+                    <ul>
+                        <li>재단법인 청소년 그루터기 <span>대표이사 홍길동</span> <span>사업자등록번호 000-00-0000</span></li>
+                        <li>(00000) 서울시 강남구 테헤란로 127 하나금융그룹 강남사옥 9층</li>
+                        <li><span>Tel. 02-6408-2000</span> <span>FAX 02-6408-2108</span> <span>이메일 rtheesun@hanafn.com</span></li>
+                    </ul>
+                    <p class="copyright">Copyright © 재단법인 청소년 그루터기 All Rights Reserved.</p>
                 </div> 
-
-                <section class='swiper-slide v3 career'>
-                    <div>
-                        <p>
-                            청소년의 플랫폼
-                            <br/>청소년그루터기재단과
-                            <br/>함께할 인재를
-                            <br/>모집합니다
-                        </p>
-                        <a href="#" class="linkButton">자세히 보기</a>                        
-                    </div>
-
-                    <footer>
-                        <div class="footerInner">
-                            <div class="footerT">
-                                <ul>
-                                    <li><a href="">이메일무단수집거부</a></li>
-                                    <li><a href="">오시는 길</a></li>
-                                    <li><a href="">채용</a></li>
-                                </ul>
-
-                                <select class="familySite">
-                                    <option>공익위반제보</option>
-                                    <option>기획재정부</option>
-                                    <option>주무관청</option>
-                                    <option>국세청</option>
-                                    <option>국민권익위원회</option>
-                                </select>
-                            </div>
-                
-                            <div class="footerB">
-                                <ul>
-                                    <li>재단법인 청소년 그루터기 <span>대표이사 홍길동</span> <span>사업자등록번호 000-00-0000</span></li>
-                                    <li>(00000) 서울시 강남구 테헤란로 127 하나금융그룹 강남사옥 9층</li>
-                                    <li><span>Tel. 02-6408-2000</span> <span>FAX 02-6408-2108</span> <span>이메일 rtheesun@hanafn.com</span></li>
-                                </ul>
-                                <p class="copyright">Copyright © 재단법인 청소년 그루터기 All Rights Reserved.</p>
-                            </div>
-                        </div>  
-                    </footer>
-                </section>        
-            </div>     
+            </footer>   
+            <!-- footer E -->
         </div>
-        <!-- content E -->
     </div>
 
     <script src="resources/lib/jquery-3.6.0.min.js?v=2021042501"></script>
-    <script src="resources/lib/swiper-bundle.min.js?v=2021042501"></script>
-    <script src="resources/js/main.js?v=2021042501"></script>
-    <script>
-
-
-
-    </script>    
+    <script src="resources/lib/jquery.fullpage.js?v=2021042501"></script>
+    <script src="resources/js/main.js?v=2021042501"></script>    
 </body>
 </html>
