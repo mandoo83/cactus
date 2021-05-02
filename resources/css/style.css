@@ -1,22 +1,60 @@
 @charset "UTF-8";
 
+/* 공통 */
+.subPage {width: 100%;}
+.subPage .inner {margin: 0 auto; padding-top: 260px;}
+
+/* contents - 재단소개 */
+.intro .subPage {height: 1920px; background: url(../img/sub_visual_about.jpg) no-repeat; background-position-x: 50%; position: relative;}
+.intro .subPage .inner {padding-left: 120px; width: 920px;}
+.intro .subPage .inner p:nth-child(1) {font-size: 18px; font-weight: bold; margin-bottom: 40px; letter-spacing: -0.5px;}
+.intro .subPage .inner h2 {font-size: 72px; font-family: 'HanaB'; color: #111; margin-bottom: 100px; line-height: 1.33;}
+.intro .subPage .inner p:nth-child(2) {font-size: 22px; line-height: 1.82; letter-spacing: -0.5px;}
+.intro .subPage .inner p:nth-child(3) {font-size: 22px; line-height: 1.82; letter-spacing: -0.5px;}
+.intro .subPage .inner p:nth-child(4) {font-size: 36px; font-weight: bold; margin: 48px 0 60px 0; line-height: 1.56; letter-spacing: -0.5px;}
+.intro .subPage .inner img {width: 800px; height: 300px; display: block;}
+
+/* contents - 이사장 인사말 */               
+.owner .inner {background: url(../img/image.jpg) no-repeat; background-position: 50% 620px;}
+.owner .inner .title {margin-left: 260px;}
+.owner .inner .title p {width: 100px; height: 28px; margin-bottom: 40px; font-size: 18px; font-weight: bold; line-height: 1.56; letter-spacing: -0.5px; color: #111111;}
+.owner .inner .title h2 {width: 908px; height: 192px; margin-bottom: 760px; font-family: HanaB; font-size: 72px; line-height: 1.33; color: #111111;}
+.owner .inner .ment {width: 1144px; margin: 0 auto 160px;}
+.owner .inner .ment p {padding-left: 232px; letter-spacing: -0.5px; color: #111111;}
+.owner .inner .ment p:nth-child(1) {height: 168px; margin-bottom: 48px; font-size: 36px; font-weight: bold; line-height: 1.56;}
+.owner .inner .ment p:nth-child(2) {height: 240px; margin-bottom: 24px; font-size: 22px; line-height: 1.82;}
+.owner .inner .ment p:nth-child(3) {height: 240px; font-size: 22px; line-height: 1.82;}
+
+/* group - 함께하는 사람들 */   
+.group .subPage .inner {width: 1400px; margin: 0 auto;}
+.group .subPage .inner > section {float: left;}
+.group .subPage .inner > section:nth-child(1) {width: 800px;}
+.group .subPage .inner > section:nth-child(2) {width: 600px;}
+.group .subPage .inner p {height: 28px; margin-bottom: 40px; font-size: 18px; font-weight: bold; line-height: 1.56; letter-spacing: -0.5px; color: #111111;}
+.group .subPage .inner h2 {height: 384px; font-family: HanaB; font-size: 72px; line-height: 1.33; color: #111111;}
+.group .subPage .inner h3 span {width: 100px; height: 33px; font-weight: normal; font-size: 22px; letter-spacing: -0.5px; color: #666666; display: inline-block;}
+.group .subPage .inner h3 {height: 33px; margin-bottom: 20px; font-size: 22px; font-weight: bold; letter-spacing: -0.5px; color: #111111;}
+.group .subPage .inner ul {height: 150px; margin: 20px 0 80px 100px; font-size: 16px; line-height: 1.88; letter-spacing: -0.5px; color: #999999;}
+
+/* address - 찾아오시는길 */ 
+.address .subPage .inner {min-width: 1400px; margin: 0 auto;}
+.address .subPage .inner #map {margin: 0 140px; height: 560px;}
+.address .subPage .inner section {width: 1400px; padding-top: 100px; padding-bottom: 168px; margin: 0 auto;}
+.address .subPage .inner section > div {float: left;}
+.address .subPage .inner section > div:nth-child(1) {width: 720px;}
+.address .subPage .inner section > div:nth-child(2) {width: 680px;}
+.address .subPage .inner section h3 {height: 30px; margin-bottom: 48px; font-size: 18px; line-height: 1.67; letter-spacing: -0.5px; color: #111111;}
+.address .subPage .inner section p {height: 112px; font-size: 36px; line-height: 1.56; letter-spacing: -0.5px; color: #111111;}
+.address .subPage .inner section > div > ul > li {float: left;}
+.address .subPage .inner section > div > ul > li:nth-child(1) {width: 360px;}
+.address .subPage .inner section > div > ul > li:nth-child(2) {width: 320px;}
+.address .subPage .inner section h4 {height: 30px; margin-bottom: 16px; font-size: 18px; font-weight: bold; line-height: 1.67; letter-spacing: -0.5px; color: #111111;}
+.address .subPage .inner section li li {line-height: 30px; margin-bottom: 8px; font-size: 16px; line-height: 1.88; letter-spacing: -0.5px; color: #111111;}
+
+/* articles - 정관 */ 
+.articles .subPage section:nth-child(1) {width: 1400px; margin: 0 auto;}
+.articles .subPage section:nth-child(1) p {height: 28px; margin-bottom: 40px; font-size: 18px; font-weight: bold; line-height: 1.56; letter-spacing: -0.5px; color: #111111;}
+  .articles .subPage h2 {height: 96px; font-family: HanaB; font-size: 72px; line-height: 1.33; color: #111111;}
 
 
-/*
- * contents - 재단소개
- */
-div.intro {width: 100%; min-width: 1400px; overflow: auto; background: url(../img/sub_visual_about.jpg) no-repeat;}
-section.introInner {width: 1400px; margin: 0 auto; padding-top: 260px;}
-section div.introContent {width: 692px; margin: 0 auto;}
-section div.introContent p:nth-child(1) {font-size: 18px; font-weight: bold; margin-bottom: 40px; letter-spacing: -0.5px;}
-section div.introContent h2 {font-size: 72px; font-family: 'HanaB'; color: #111; margin-bottom: 100px; line-height: 1.33;}
-section div.introContent p:nth-child(2) {font-size: 22px; line-height: 1.82; letter-spacing: -0.5px;}
-section div.introContent p:nth-child(3) {font-size: 22px; line-height: 1.82; letter-spacing: -0.5px;}
-section div.introContent p:nth-child(4) {font-size: 36px; font-weight: bold; margin: 48px 0 60px 0; line-height: 1.56; letter-spacing: -0.5px;}
-section div.introContent img {width: 800px; height: 300px;}
 
-
-/*
- * contents - 이사장 인사말
- */
-div.owner {width: 1400px; margin: 0 auto; padding-top: 160px;} 

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <title>간단한 지도 표시하기</title>
+    <script type="text/javascript" src="https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=aabyro9r7b"></script>
+</head>
+<body>
+<div id="map" style="width:50%;height:400px;"></div>
+
+<script>
+
+/* 1차 기본 
+네이버 지도관련 
+API 주소 : https://navermaps.github.io/maps.js.ncp/
+
+
+var mapOptions = {
+    center: new naver.maps.LatLng(37.4996243, 127.032012,15),    
+        zoom: 17, //지도의 초기 줌 레벨
+        minZoom: 10, //지도의 최소 줌 레벨
+        zoomControl: true, //줌 컨트롤의 표시 여부
+        zoomControlOptions: { //줌 컨트롤의 옵션
+            position: naver.maps.Position.TOP_RIGHT
+        }
+};
+
+var map = new naver.maps.Map('map', mapOptions);
+
+var marker = new naver.maps.Marker({
+    position: new naver.maps.LatLng(37.4996243, 127.032012,15),
+    map: map
+});
+
+1차 기본 end  
+*/
+
+/* 정보창 있는 2차 시작 */
+var HOME_PATH = window.HOME_PATH || '.';
+
+
+var cityhall = new naver.maps.LatLng(37.4996243, 127.032012,15),
+    map = new naver.maps.Map('map', {
+        center: cityhall.destinationPoint(0, 0),
+        zoom: 17, //지도의 초기 줌 레벨
+        minZoom: 10, //지도의 최소 줌 레벨
+        zoomControl: true, //줌 컨트롤의 표시 여부
+        zoomControlOptions: { //줌 컨트롤의 옵션
+            position: naver.maps.Position.TOP_RIGHT
+        }
+    }),
+    marker = new naver.maps.Marker({
+        map: map,
+        position: cityhall
+    });
+
+var contentString = [
+        '<div class="iw_inner">',
+        '   <h3>청소년그루터기재단</h3>',
+        '   <p>서울 강남구 테헤란로 127 하나금융그룹 강남사옥 9층 ',
+        '   </p>',
+        '</div>'
+    ].join('');
+
+var infowindow = new naver.maps.InfoWindow({
+    content: contentString
+});
+
+naver.maps.Event.addListener(marker, "click", function(e) {
+    if (infowindow.getMap()) {
+        infowindow.close();
+    } else {
+        infowindow.open(map, marker);
+    }
+});
+
+infowindow.open(map, marker);
+
+/* 정보창 있는 2차 끝 */
+</script>
+</body>
+</html>
