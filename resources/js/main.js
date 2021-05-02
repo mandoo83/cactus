@@ -14,18 +14,26 @@ var fullpage = $("#fullpage").fullpage({
         }
     },
     afterLoad: function (anchorLink, origin) {
-        if (origin == 4 || origin == 5) {
+        if (origin == 5) {
+            return true;
+        } else if (origin == 4) {
             $("header").addClass("black");
         } else {
             $("header").removeClass("black");
         }
+
+        if (flag) $(".section").eq(origin - 1).addClass("inter").siblings().removeClass("inter");
     }
 });
+
+var flag = false;
+setTimeout(function () { $(".section").eq(0).addClass("inter"); flag = true; }, 500);
 
 // tab 
 var idx = 0;
 
 $(".tabNav .tab li").on("click", function () {
+    $(".section").eq(2).removeClass("inter");
     var _this = $(this);
     idx = _this.index();
     _this.addClass("on").siblings().removeClass("on");
@@ -33,6 +41,7 @@ $(".tabNav .tab li").on("click", function () {
     $(".tabBody ul").eq(idx).addClass("on").siblings().removeClass("on");
     $(".tabBody ul").eq(idx).find("li:first-child").addClass("on").siblings().removeClass("on");
     $(".section:eq(2) .bg img").eq(idx * 3).addClass("on").siblings().removeClass("on");
+    setTimeout(function () { $(".section").eq(2).addClass("inter"); }, 500);
 });
 
 $(".tabBody li").on("mouseenter", function () {
