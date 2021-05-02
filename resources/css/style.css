@@ -3,8 +3,8 @@
 /*
  * contents - 재단소개
  */
-div.introWrap {width: 100%; min-width: 1440px; overflow: auto; height: 100%; background: url(../img/sub_visual_about.png) no-repeat;}
-section.introInner {width: 1440px; margin: 0 auto; padding-top: 260px; margin-left: 380px;}
+div.introWrap {width: 100%; min-width: 1400px; overflow: auto; height: 1920px; background: url(../img/sub_visual_about.png) no-repeat;}
+section.introInner {width: 1400px; margin: 0 auto; padding-top: 260px;}
 section.introInner p:nth-child(1) {font-size: 18px; font-weight: bold; margin-bottom: 40px; letter-spacing: -0.5px;}
 section.introInner h2 {font-size: 72px; font-family: 'HanaB'; color: #111; margin-bottom: 100px; line-height: 1.33;}
 section.introInner p:nth-child(2) {font-size: 22px; line-height: 1.82; letter-spacing: -0.5px;}
@@ -13,3 +13,9 @@ section.introInner p:nth-child(4) {font-size: 36px; font-weight: bold; margin: 4
 section.introInner img {width: 800px; height: 300px;}
 
 
+/*
+ * contents - 이사장 인사말
+ */
+div.subWrap {} 
+div.sbuInner {}
+div.sbuInner section {}
