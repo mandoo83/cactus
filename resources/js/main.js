@@ -44,3 +44,14 @@ $(".top").on("click", function () {
     $.fn.fullpage.moveTo(1);
     $.fn.fullpage.setScrollingSpeed(1000); 
 });
+
+// menu link
+$("header nav a").on("click", function () {
+    var url = $(this).attr("href");
+
+    $.get(url, function (dom) {
+        console.log(dom);
+    });
+
+    return false;
+});
