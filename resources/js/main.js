@@ -5,6 +5,10 @@ var fullpage = $("#fullpage").fullpage({
             $(".section").eq(1).addClass("v1");
         } else if (origin == 3 && direction == "up") {
             $(".section").eq(1).addClass("v1");
+        } else if (origin == 4 && direction == "down") {
+            $("header").fadeOut();          
+        } else if (origin == 5 && direction == "up") {
+            $("header").fadeIn();                       
         } else {
             $(".v1").removeClass("v1");
         }
@@ -43,15 +47,4 @@ $(".tabBody li").on("mouseenter", function () {
 $(".top").on("click", function () {
     $.fn.fullpage.moveTo(1);
     $.fn.fullpage.setScrollingSpeed(1000); 
-});
-
-// menu link
-$("header nav a").on("click", function () {
-    var url = $(this).attr("href");
-
-    $.get(url, function (dom) {
-        console.log(dom);
-    });
-
-    return false;
 });
