@@ -184,7 +184,7 @@ footer .footerB ul {margin-bottom: 20px;}
 #fullpage .tabBody ul:nth-child(3) li:nth-child(3).on h3 {margin-top: 67px;} 
 
 #fullpage .section:nth-child(4) {background: url(../img/visual3.png) no-repeat #f7faec; background-size: cover;}
-#fullpage .section:nth-child(4) .ment {left: 240px; margin-top: -216px;}
+#fullpage .section:nth-child(4) .ment {left: 240px; padding-top: 80px; margin-top: -216px;}
 #fullpage .section:nth-child(4) .ment > p {width: 672px; height: 216px; margin: 0 0 80px; font-family: HanaB; font-size: 56px; line-height: 1.29; color: #111111;}
 #fullpage .section:nth-child(4) .ment > a {display: block; width: 160px; height: 56px; line-height: 56px; border-radius: 28px; background-color: #9bc452; color: #fff; text-align: center;}
 #fullpage .section:nth-child(4) .top {position: absolute; bottom: 40px; right: 140px; cursor: pointer;}
