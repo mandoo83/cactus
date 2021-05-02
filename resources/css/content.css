@@ -99,7 +99,9 @@ header .headerInner .logo {font-size: 20px; color:#fff;}
 header .headerInner nav > ul ul {display: none;}
 header .headerInner nav > ul > li:hover {position: relative;}
 header .headerInner nav > ul > li:hover > a {font-family: HanaB; font-size: 15px; color: #9bc452 !important; transition: 0.3s;}
-header .headerInner nav > ul > li:hover:after {position: absolute; content: ''; display: block; top: 61px; left: 50%; margin-left: -35px; width: 70px; height: 4px; background-color: #9bc452; transition: 0.3s;}
+header .headerInner nav > ul > li:after {position: absolute; content: ''; display: block; top: 61px; left: 50%; background-color: #9bc452; transform: translateX(-50%); width: 0; height: 4px;}
+header .headerInner nav > ul > li:hover:after{width: 70px; transition: all .3s ease-out;}
+header .headerInner nav > ul > li > ul > li > a:hover {text-decoration: underline;}
 
 header:hover {background: rgb(255, 255, 255);}
 header:hover:after {display: block;  content: '';  position: absolute;  top: 100px;  left: 0;  z-index: 1;  height: 1px;  width: 100%;  background-color: #000; opacity: 0.1;}
