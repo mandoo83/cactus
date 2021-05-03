@@ -54,8 +54,8 @@ $(".tabBody li").on("mouseenter", function () {
 
 // top
 $(".top").on("click", function () {
+    $.fn.fullpage.setScrollingSpeed(1500); 
     $.fn.fullpage.moveTo(1);
-    $.fn.fullpage.setScrollingSpeed(1000); 
 });
 
 // pc 모바일 구분
