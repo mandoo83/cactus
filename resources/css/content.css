@@ -41,9 +41,9 @@ font-family: 'HanaB';
 font-style: normal;
 font-weight: 600;
 src: local('HanaB'),
+      url('../font/HanaB.ttf') format('truetype'),
       url('../font/HanaB.woff2') format('woff2'),
-      url('../font/HanaB.woff') format('woff'),
-      url('../font/HanaB.ttf') format('truetype');  
+      url('../font/HanaB.woff') format('woff');  
 }
 
 @font-face {
