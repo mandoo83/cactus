@@ -208,3 +208,9 @@ footer .footerB ul {margin-bottom: 20px;}
 #fullpage .inter.section:nth-child(4) .ment p {opacity: 1; transition: All .8s ease; transform: translate(0, 0); transition-delay: 0.1s;}
 #fullpage .section:nth-child(4) .ment a {opacity: 0; text-transform: uppercase; transform: translate(60px, 0);}
 #fullpage .inter.section:nth-child(4) .ment a {opacity: 1; transition: All .8s ease; transform: translate(0, 0); transition-delay: 0.1s;}
+
+/* popup - 이메일 수집 거부 */
+.popup {width: 480px; height: 256px; position: fixed; left: 50%; top: 50%; margin: -128px 0 0 -240px; background: #fff; z-index: 9999999;}
+.popup h2 {width: 480px; height: 64px; padding: 18px 30px 19px; background-color: #9bc452; font-size: 18px; font-weight: 500; color: #ffffff; position: relative;}
+.popup h2 img {position: absolute; right: 30px; top: 22px; cursor: pointer;}
+.popup div {width: 420px; height: 120px; font-size: 14px; line-height: 1.71; letter-spacing: -0.5px; color: #666666; margin: 36px 30px;}
