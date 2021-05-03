@@ -81,6 +81,8 @@ src: local('HanaB'),
       url('../font/HanaUL.woff') format('woff'); 
 }
 
+p, a, h1, h2, h3, h4, h5, h6, li, div {transform: skew(-0.1deg);}
+
 html {height: 100%;}
 html, body {font-family: 'Noto Sans KR'; width: 100%; min-width: 1440px; overflow-x: auto !important;}
 #skipNav {position: absolute; top: -200px; left: 0; height: 0; width: 0; overflow: hidden;}
