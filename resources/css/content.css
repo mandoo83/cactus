@@ -41,9 +41,8 @@ font-family: 'HanaB';
 font-style: normal;
 font-weight: 600;
 src: local('HanaB'),
-      url('../font/HanaB.ttf') format('truetype'),
       url('../font/HanaB.woff2') format('woff2'),
-      url('../font/HanaB.woff') format('woff');  
+      url('../font/HanaB.woff') format('woff'); 
 }
 
 @font-face {
@@ -52,8 +51,7 @@ font-style: normal;
 font-weight: 600;
 src: local('HanaCM'),
       url('../font/HanaCM.woff2') format('woff2'),
-      url('../font/HanaCM.woff') format('woff'),
-      url('../font/HanaCM.ttf') format('truetype');  
+      url('../font/HanaCM.woff') format('woff'); 
 }
 
 @font-face {
@@ -62,8 +60,7 @@ font-style: normal;
 font-weight: 600;
 src: local('HanaL'),
       url('../font/HanaL.woff2') format('woff2'),
-      url('../font/HanaL.woff') format('woff'),
-      url('../font/HanaL.ttf') format('truetype'); 
+      url('../font/HanaL.woff') format('woff'); 
 }
 
 @font-face {
@@ -72,8 +69,7 @@ font-style: normal;
 font-weight: 600;
 src: local('HanaB'),
       url('../font/HanaM.woff2') format('woff2'),
-      url('../font/HanaM.woff') format('woff'),
-      url('../font/HanaM.ttf') format('truetype');  
+      url('../font/HanaM.woff') format('woff'); 
 }
 
 @font-face {
@@ -82,8 +78,7 @@ font-style: normal;
 font-weight: 600;
 src: local('HanaB'),
       url('../font/HanaUL.woff2') format('woff2'),
-      url('../font/HanaUL.woff') format('woff'),
-      url('../font/HanaUL.ttf') format('truetype'); 
+      url('../font/HanaUL.woff') format('woff'); 
 }
 
 html {height: 100%;}
