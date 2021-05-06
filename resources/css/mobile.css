@@ -1,0 +1,108 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 300;
+    src: local('Noto Sans KR Light'), local('NotoSansKR-Light'), 
+        url('../font/NotoSansKR-Light.woff2') format('woff2'), 
+        url('../font/NotoSansKR-Light.woff') format('woff'); 
+  }
+  
+  @font-face {
+  font-family: 'Noto Sans KR';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Noto Sans KR Regular'), local('NotoSansKR-Regular'), 
+        url('../font/NotoSansKR-Regular.woff2') format('woff2'), 
+        url('../font/NotoSansKR-Regular.woff') format('woff'); 
+  }
+  
+  @font-face {
+  font-family: 'Noto Sans KR';
+  font-style: normal;
+  font-weight: 500;
+  src: local('Noto Sans KR Medium'), local('NotoSansKR-Medium'),
+      url('../font/NotoSansKR-Medium.woff2') format('woff2'), 
+      url('../font/NotoSansKR-Medium.woff') format('woff'); 
+  }
+  
+  @font-face {
+  font-family: 'Noto Sans KR';
+  font-style: normal;
+  font-weight: 600;
+  src: local('Noto Sans KR Bold'), local('NotoSansKR-Bold'),
+      url('../font/NotoSansKR-Bold.woff2') format('woff2'), 
+      url('../font/NotoSansKR-Bold.woff') format('woff'); 
+  }
+  
+  @font-face {
+  font-family: 'HanaB';
+  font-style: normal;
+  font-weight: 600;
+  src: local('HanaB'),
+        url('../font/HanaB.woff2') format('woff2'),
+        url('../font/HanaB.woff') format('woff'); 
+  }
+  
+  @font-face {
+  font-family: 'HanaCM';
+  font-style: normal;
+  font-weight: 600;
+  src: local('HanaCM'),
+        url('../font/HanaCM.woff2') format('woff2'),
+        url('../font/HanaCM.woff') format('woff'); 
+  }
+  
+  @font-face {
+  font-family: 'HanaL';
+  font-style: normal;
+  font-weight: 600;
+  src: local('HanaL'),
+        url('../font/HanaL.woff2') format('woff2'),
+        url('../font/HanaL.woff') format('woff'); 
+  }
+  
+  @font-face {
+  font-family: 'HanaM';
+  font-style: normal;
+  font-weight: 600;
+  src: local('HanaB'),
+        url('../font/HanaM.woff2') format('woff2'),
+        url('../font/HanaM.woff') format('woff'); 
+  }
+  
+  @font-face {
+  font-family: 'HanaUL';
+  font-style: normal;
+  font-weight: 600;
+  src: local('HanaB'),
+        url('../font/HanaUL.woff2') format('woff2'),
+        url('../font/HanaUL.woff') format('woff'); 
+  }
+  
+  p, a, h1, h2, h3, h4, h5, h6, li {transform: skew(-0.1deg);}
+
+html, body {font-family: 'Noto Sans KR'; width: 100%; height: 100%; overflow-x: auto !important;}
+
+/* mobile */
+.mobile {width: 100%; height: 100%; background: url(../img/visual4.png) no-repeat; background-size: cover; position: relative;}
+.mobile header {width: 100%; position: fixed; top: 0; left: 0;}
+.mobile header h1 {height: 64px; line-height: 64px; text-align: center; font-family: HanaB; font-size: 16px; color: #ffffff;}
+.mobile header:after {display: block; content: ''; position: absolute; top: 64px; left: 0; z-index: 1; height: 1px; width: 100%; background-color: #fff; opacity: 0.2;}
+
+.mobile .subPage {width: 100%; position: absolute; top: 50%; left: 0; margin: -137px 0 0;} 
+.mobile .subPage div {width: 100%; color: #fff; text-align: center;}
+.mobile .subPage div:first-child {height: 138px; font-family: HanaB; font-size: 36px; line-height: 1.28; margin-bottom: 20px;}
+.mobile .subPage div:last-child {height: 115px; font-size: 15px; line-height: 1.53; letter-spacing: -0.5px;}
+
+.mobile footer {position: fixed; bottom: 40px; left: 0; width: 100%; height: 48px; font-size: 16px; font-weight: bold; line-height: 1.5; letter-spacing: -0.5px; text-align: center; color: #ffffff;}
+
+
+@media(-webkit-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    .mobile {height: 100%; background: url(../img/visual4@2x.png) no-repeat; background-size: cover;}
+}
+
+@media(-webkit-device-pixel-ratio: 3) {
+    .mobile {height: 100%; background: url(../img/visual4@3x.png) no-repeat; background-size: cover;}
+}

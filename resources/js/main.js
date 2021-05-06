@@ -62,8 +62,8 @@ $(".top").on("click", function () {
 if (!navigator.userAgent.match(/Android|Mobile|iP(hone|od|ad)|BlackBerry|IEMobile|Kindle|NetFront|Silk-Accelerated|(hpw|web)OS|Fennec|Minimo|Opera M(obi|ini)|Blazer|Dolfin|Dolphin|Skyfire|Zune/)){
     //PC에서만 실행 될 스크립트   alert("PC 브라우저");
 } else {
-    alert("사이트는 PC 브라우저로 보실수 있습니다. PC에서 확인해주세요");
-    //location.href="pc_only.html";
+    //alert("사이트는 PC 브라우저로 보실수 있습니다. PC에서 확인해주세요");
+    location.href = "mobile.html";
 }
 
 // popup
