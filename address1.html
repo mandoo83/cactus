@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <title>청소년그루터기재단</title>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="resources/css/reset.css?v=20210503"/>
+    <link rel="stylesheet" href="resources/css/content.css?v=20210503"/>
+    <link rel="stylesheet" href="resources/css/style.css?v=20210503"/>
+</head>
+<body>
+    <div class="wrap address">
+        <nav id="skipNav">
+            <ul>
+                <li><a href="#content">본문 바로가기</a></li>
+            </ul>
+        </nav>
+
+        <!-- Gnb S -->
+        <header class="black">
+            <div class="headerInner">
+                <h1><a href="index.html">청소년그루터기재단</a></h1>
+
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="intro.html">그루터기</a>
+                            <ul>
+                                <li><a href="intro.html">그루터기 소개</a></li>
+                                <li><a href="owner.html">인사말</a></li>
+                                <li><a href="group.html">함께하는 사람들</a></li>
+                                <li><a href="address.html">오시는 길</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="articles.html">신뢰와 투명성</a>
+                            <ul>
+                                <li><a href="articles.html">정관</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="career.html">소식</a>
+                            <ul>
+                                <li><a href="career.html">채용</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <!-- Gnb E -->
+
+        <div class="subPage">
+            <div class="inner">
+                <div id="map"></div>
+
+                <section>
+                    <div>
+                        <h3>주소</h3>
+                        <p>서울특별시 강남구 테헤란로 127 <br>하나금융그룹 강남사옥 9층</p>
+                    </div>
+                    <div>
+                        <h3>대중교통</h3>
+                        <ul>
+                            <li>
+                                <h4>지하철</h4>
+                                <ul>
+                                    <li>2호선 역삼역 4번 출구 306m</li>
+                                    <li>2호선 강남역 12번 출구 826m</li>
+                                    <li>9호선 언주역 7번 출구 1.2km</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h4>버스</h4>
+                                <ul>
+                                    <li>역삼역.포스코타워 역삼 정류장 188m<br> 간선 740, 360, N13, 146 </li>
+                                    <li>지하철 2호선 강남역(중) 정류장 826m<br> 간선 140, 470, 144, 402, N37, 420, 400, 741, N13</li>
+                                    <li>역삼역 정류장 270m<br> 직행 3600 </li>
+                                    <li>강남역 12번출구 정류장 240m<br> 직행 9600</li>
+                                </ul>
+                            </li>        
+                        </ul>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+        <!-- footer S -->
+        <footer class="section">
+            <div class="footerT">
+                <ul>
+                    <li><a href="popup.html">이메일무단수집거부</a></li>
+                    <li><a href="address.html">오시는 길</a></li>
+                    <li><a href="career.html">채용</a></li>
+                </ul>
+
+                <select class="familySite">
+                    <option>공익위반제보</option>
+                    <option>기획재정부</option>
+                    <option>주무관청</option>
+                    <option>국세청</option>
+                    <option>국민권익위원회</option>
+                </select>
+            </div>
+
+            <div class="footerB">
+                <ul>
+                    <li>재단법인 청소년 그루터기 <span>대표이사 홍길동</span> <span>사업자등록번호 000-00-0000</span></li>
+                    <li>(00000) 서울시 강남구 테헤란로 127 하나금융그룹 강남사옥 9층</li>
+                    <li><span>Tel. 02-6408-2000</span> <span>FAX 02-6408-2108</span> <span>이메일 rtheesun@hanafn.com</span></li>
+                </ul>
+                <p class="copyright">Copyright © 재단법인 청소년 그루터기 All Rights Reserved.</p>
+            </div> 
+        </footer>   
+        <!-- footer E -->            
+    </div>
+
+    <script src="resources/lib/jquery-3.6.0.min.js?v=20210503"></script>
+    <script src="resources/lib/jquery.fullpage.js?v=20210503"></script>
+    <script src="resources/js/main.js?v=20210503"></script>  
+    <script type="text/javascript" src="https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=aabyro9r7b"></script>
+    <script>
+        var cityhall = new naver.maps.LatLng(37.4996243, 127.032012,15);
+
+        var map = new naver.maps.Map('map', {
+            center: cityhall.destinationPoint(0, 0),
+            zoom: 17, //지도의 초기 줌 레벨
+            minZoom: 10, //지도의 최소 줌 레벨
+            zoomControl: true, //줌 컨트롤의 표시 여부
+            zoomControlOptions: { //줌 컨트롤의 옵션
+                position: naver.maps.Position.TOP_RIGHT
+            }
+        });
+
+        var HOME_PATH = window.HOME_PATH || '.';
+        var marker = new naver.maps.Marker({
+            position: cityhall,
+            map: map,
+            icon: {
+                url: HOME_PATH +'/resources/img/map_ad.png',
+                size: new naver.maps.Size(197, 60),
+                origin: new naver.maps.Point(0, 0),
+                anchor: new naver.maps.Point(30, 54)
+            }
+        });
+    </script>
+</body>
+</html>
