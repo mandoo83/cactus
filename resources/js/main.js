@@ -78,3 +78,12 @@ $(document).on("click", "a[href='popup.html']", function () {
 }).on("click", ".popup h2 img", function () {
     $(".popup").remove();
 });
+
+// family site
+$(document).on("change", ".familySite", function () {
+    var val = $(this).val();
+
+    if (val) {
+        window.open(val);
+    }
+});
