@@ -83,7 +83,7 @@ $(document).on("click", "a[href='popup.html']", function () {
 $(document).on("change", ".familySite", function () {
     var val = $(this).val();
 
-    if (val) {
+    if (val.indexOf("http") > -1) {
         window.open(val);
     }
 });
